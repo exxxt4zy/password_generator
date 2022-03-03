@@ -2,6 +2,7 @@ import os
 import string
 import random
 import time
+os.system("clear")
 banner = """
 ██████╗  █████╗ ███████╗███████╗ ██████╗ ███████╗███╗   ██╗
 ██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝ ██╔════╝████╗  ██║
