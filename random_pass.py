@@ -33,6 +33,7 @@ def random_password_generator():
         arq = open(filename, 'w')
         arq.write(passw)
         arq.close()
+        print("\033[33m[*] Ready! Your password has been recorded in ", filename)
         print("\033[33m[^_^] Your password: ", passw)
         
     else:
