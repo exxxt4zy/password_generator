@@ -27,19 +27,18 @@ def random_password_generator():
         time.sleep(0.1)
     print("\n")
     os.system("clear")
-    
-    if input(str("\n\033[36m[!] Want to write to a file? (Y or N)? ")) == 'Y' or 'y':
+
+    choise = input(str("\n\033[36m[!] Want to write to a file? (Y or N)? ")) 
+    if choise == "Y":
         filename = input(str("\033[36m[*] Enter file name: "))
         arq = open(filename, 'w')
         arq.write(passw)
         arq.close()
         print("\033[33m[*] Ready! Your password has been recorded in ", filename)
-        print("\033[33m[^_^] Your password: ", passw)
-        
+        print("\033[33m[^_^] Your password: ", passw)        
     else:
         os.system("clear")
         print("\033[33m[^_^] Your password: ", passw)
-    pass
 
 
 random_password_generator()
