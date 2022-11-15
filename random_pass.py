@@ -49,6 +49,9 @@ def random_password_generator():
 
 random_password_generator()
 
-        
-         
+if __name__ == "__main__":
+    try:
+        random_password_generator()
+    except:
+        print("\nExit")
 
